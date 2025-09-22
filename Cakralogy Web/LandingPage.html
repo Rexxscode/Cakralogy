@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Cakralogy</title>
+  <link rel="icon" type="image/png" href="4712109.png">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <!-- AOS CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <!-- AOS JS -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="font-[Poppins] bg-gray-50">
+  <nav id="topnav" class="bg-gradient-to-r from-sky-400 to-sky-500 fixed top-0 left-0 w-full z-50 transition-shadow">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="h-16 flex items-center justify-between">
+        <img src="4712109.png" width="45px" height="45px" alt="">
+        <a href="#home" class="text-white text-2xl font-bold tracking-wide">Cakralogy</a>
+        <div class="hidden md:flex items-center gap-6">
+          <a data-nav href="#home" class="nav-link text-white">Home</a>
+          <a data-nav href="#about" class="nav-link text-white">About</a>
+          <a data-nav href="#learning" class="nav-link text-white">Learning</a>
+          <a data-nav href="#search" class="nav-link text-white">Search</a>
+          <a data-nav href="#collection" class="nav-link text-white">Collection</a>
+        </div>
+        <button id="menu-btn"
+                class="md:hidden text-white text-2xl focus:outline-none"
+                aria-controls="mobileMenu"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+          ☰
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobileMenu"
+         class="mobile-menu md:hidden bg-sky-500/95 backdrop-blur-sm overflow-hidden max-h-0 opacity-0 pointer-events-none">
+      <div class="px-4 py-2 flex flex-col">
+        <a data-nav href="#home" class="mobile-link">Home</a>
+        <a data-nav href="#about" class="mobile-link">About</a>
+        <a data-nav href="#learning" class="mobile-link">Learning</a>
+        <a data-nav href="#search" class="mobile-link">Search</a>
+        <a data-nav href="#collection" class="mobile-link">Collection</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CONTENT / SECTIONS -->
+  <main>
+    <!-- 🔹 Home Section -->
+    <section id="home" class="bg-gradient-to-r from-sky-400 via-sky-500 to-indigo-500 min-h-screen flex items-center mt-8">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+
+
+    <!-- Right Content (Robot) -->
+    <div class="flex justify-center md:justify-end relative" data-aos="fade-up">
+      <img src="https://cdn-icons-png.flaticon.com/512/4712/4712109.png" 
+           alt="Cakralogy Mascot" 
+           class="w-64 sm:w-72 md:w-96 drop-shadow-2xl animate-float">
+      <!-- Glow Effect -->
+      <div class="absolute -bottom-6 w-48 h-10 bg-sky-300/40 rounded-full blur-2xl animate-pulse"></div>
+    </div>
+    <!-- Left Content -->
+    <div class="text-center md:text-left space-y-6 ml-5" data-aos="fade-up">
+      <h1 class="text-4xl md:text-5xl font-extrabold text-white leading-tight">
+        Welcome to <span class="bg-clip-text text-transparent bg-gradient-to-r from-yellow-200 via-orange-300 to-pink-400 animate-pulse">Cakralogy</span>
+      </h1>
+      <p class="text-white/90 text-lg max-w-lg mx-auto md:mx-0">
+        Jelajahi pengetahuan chakra dengan cara yang menyenangkan, interaktif, 
+        dan penuh warna untuk meningkatkan wawasan spiritualmu.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+        <a href="#learning"
+           class="bg-orange-500 hover:bg-orange-600 text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300">
+          Pelajari Selanjutnya
+        </a>
+        <a href="#search"
+           class="bg-white/20 hover:bg-white/30 backdrop-blur-md text-white font-semibold py-3 px-6 rounded-full shadow-lg transition duration-300 border border-white/40">
+          Search Chakra
+        </a>
+      </div>
+    </div>
+
+    
+
+  </div>
+</section>
+
+<!-- Tambahkan CSS di file style.css -->
+<style>
+  /* Floating animation untuk robot */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+  }
+  .animate-float {
+    animation: float 4s ease-in-out infinite;
+  }
+</style>
+
+
+    <section id="about" class="relative py-20 bg-gradient-to-r from-sky-400 via-sky-500 to-indigo-500">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12">
+    <div class="grid md:grid-cols-2 gap-12 items-center">
+      
+      <!-- Left Content -->
+      <div data-aos="fade-right">
+        <h2 class="text-4xl font-bold text-white mb-6">
+          Tentang <span class="text-yellow-200">Cakralogy</span>
+        </h2>
+        <p class="text-white/90 text-lg mb-6">
+          Cakralogy hadir untuk memperkenalkan <strong>pengetahuan chakra</strong> dengan cara yang modern, menyenangkan, 
+          dan interaktif. Kami percaya keseimbangan energi diri bisa membantu meningkatkan kualitas hidup.
+        </p>
+
+        <!-- Tabs / Feature Cards -->
+        <div class="grid sm:grid-cols-3 gap-6 mb-6">
+          <!-- Visi -->
+          <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300">
+            <div class="flex items-center justify-center w-12 h-12 rounded-full bg-sky-600 text-white mb-4">
+              <i class="fas fa-eye text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Visi</h3>
+            <p class="text-white/80 text-sm">Menjadi platform chakra interaktif yang mengedukasi generasi modern.</p>
+          </div>
+
+          <!-- Misi -->
+          <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300">
+            <div class="flex items-center justify-center w-12 h-12 rounded-full bg-orange-500 text-white mb-4">
+              <i class="fas fa-bullseye text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Misi</h3>
+            <p class="text-white/80 text-sm">Mengedukasi, menginspirasi, dan membangun kesadaran diri lewat chakra.</p>
+          </div>
+
+          <!-- Nilai -->
+          <div class="bg-white/10 backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300">
+            <div class="flex items-center justify-center w-12 h-12 rounded-full bg-purple-600 text-white mb-4">
+              <i class="fas fa-heart text-xl"></i>
+            </div>
+            <h3 class="text-xl font-bold text-white mb-2">Nilai</h3>
+            <p class="text-white/80 text-sm">Keseimbangan, kesadaran, dan energi positif untuk kehidupan yang lebih baik.</p>
+          </div>
+        </div>
+
+        <!-- CTA -->
+        <a href="#learning" 
+           class="inline-block bg-yellow-400 hover:bg-yellow-500 text-sky-900 font-semibold py-3 px-6 rounded-full shadow-md transition">
+          Mulai Belajar
+        </a>
+      </div>
+
+      <!-- Right Content (Stats & Cards) -->
+      <div class="grid sm:grid-cols-2 gap-6" data-aos="fade-left">
+        <!-- Card -->
+        <div class="p-6 bg-white/20 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-2xl font-bold text-white">500+</h3>
+          <p class="text-white/80">Pengguna Belajar Chakra</p>
+        </div>
+
+        <div class="p-6 bg-white/20 rounded-xl shadow hover:shadow-lg transition">
+          <h3 class="text-2xl font-bold text-yellow-200">7 Chakra</h3>
+          <p class="text-white/80">Materi Interaktif</p>
+        </div>
+
+        <div class="p-6 bg-white/20 rounded-xl shadow hover:shadow-lg transition sm:col-span-2">
+          <h3 class="text-2xl font-bold text-purple-200">20+ Modul</h3>
+          <p class="text-white/80">Pembelajaran Menyenangkan</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Timeline / Roadmap -->
+    <div class="mt-16">
+      <h3 class="text-2xl font-bold text-center text-white mb-10">Perjalanan Kami</h3>
+      <div class="relative border-l border-white/30 max-w-2xl mx-auto">
+        <div class="mb-10 ml-6">
+          <div class="absolute w-3 h-3 bg-sky-300 rounded-full -left-1.5 mt-2"></div>
+          <h4 class="text-lg font-semibold text-white">2023</h4>
+          <p class="text-white/80">Cakralogy lahir sebagai ide sederhana untuk belajar chakra secara fun.</p>
+        </div>
+        <div class="mb-10 ml-6">
+          <div class="absolute w-3 h-3 bg-orange-300 rounded-full -left-1.5 mt-2"></div>
+          <h4 class="text-lg font-semibold text-white">2024</h4>
+          <p class="text-white/80">Rilis versi beta dengan modul dasar chakra.</p>
+        </div>
+        <div class="ml-6">
+          <div class="absolute w-3 h-3 bg-purple-300 rounded-full -left-1.5 mt-2"></div>
+          <h4 class="text-lg font-semibold text-white">2025</h4>
+          <p class="text-white/80">Pengembangan berlanjut dengan AI interaktif & komunitas global.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<section id="learning" class="learning-section bg-gradient-to-r from-sky-400 via-sky-500 to-indigo-500">
+  <div class="container">
+    <h2 class="section-title">Learning Center</h2>
+    <p class="section-subtitle">Belajar teknologi & informasi dengan 20 materi terpopuler</p>
+
+    <!-- Filter & Search -->
+    <div class="filter-search">
+      <select id="filterSelect">
+        <option value="all">Semua Kategori</option>
+        <option value="programming">Programming</option>
+        <option value="network">Networking</option>
+        <option value="security">Cyber Security</option>
+        <option value="data">Data & AI</option>
+        <option value="web">Web Development</option>
+      </select>
+      <input type="text" id="searchInput" placeholder="Cari materi...">
+    </div>
+
+
+    <!-- Grid Materi -->
+    <div class="learning-grid" id="learningGrid">
+      
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="programming" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/000000/code.png" alt="Programming">
+        <h3>Pemrograman Dasar</h3>
+        <p>Belajar logika & sintaks dasar Python, C++, dan Java.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="web">
+        <img src="https://img.icons8.com/color/96/000000/html-5--v1.png" alt="HTML">
+        <h3>HTML & CSS</h3>
+        <p>Membangun tampilan website dengan struktur HTML dan style CSS.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="web" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/000000/javascript.png" alt="JavaScript">
+        <h3>JavaScript</h3>
+        <p>Membuat website interaktif dengan JavaScript modern.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="web" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/000000/react-native.png" alt="React">
+        <h3>React JS</h3>
+        <p>Framework modern untuk membangun UI website dinamis.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      <!-- Card 5 -->
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="web" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/000000/nodejs.png" alt="NodeJS">
+        <h3>Node.js</h3>
+        <p>Belajar backend JavaScript dengan Node.js & Express.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      <!-- Card 6 -->
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="data" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/000000/python.png" alt="Python">
+        <h3>Data Science dengan Python</h3>
+        <p>Analisis data & machine learning dengan Python.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      <!-- Card 7 -->
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="data" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/000000/artificial-intelligence.png" alt="AI">
+        <h3>Artificial Intelligence</h3>
+        <p>Konsep & implementasi AI di berbagai bidang.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      <!-- Card 8 -->
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="data">
+        <img src="https://img.icons8.com/color/96/000000/sql.png" alt="SQL">
+        <h3>Database & SQL</h3>
+        <p>Manajemen data dengan MySQL, PostgreSQL & MongoDB.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      <!-- Card 9 -->
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="network" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/000000/network.png" alt="Networking">
+        <h3>Dasar Jaringan</h3>
+        <p>Belajar TCP/IP, subnetting, dan perangkat jaringan.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      <!-- Card 10 -->
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="network" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/000000/cloud.png" alt="Cloud">
+        <h3>Cloud Computing</h3>
+        <p>Dasar-dasar cloud service: AWS, Azure, Google Cloud.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      <!-- Card 11 -->
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="security" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/000000/lock--v1.png" alt="Cyber Security">
+        <h3>Cyber Security</h3>
+        <p>Belajar keamanan siber, enkripsi, dan ethical hacking.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      <!-- Card 12 -->
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="security" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/000000/firewall.png" alt="Firewall">
+        <h3>Network Security</h3>
+        <p>Proteksi jaringan dari serangan malware & hacker.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      <!-- Card 13 -->
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="security" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/000000/security-checked.png" alt="Pentesting">
+        <h3>Penetration Testing</h3>
+        <p>Simulasi serangan untuk menguji keamanan sistem.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      <!-- Card 14 -->
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="programming" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/000000/java-coffee-cup-logo.png" alt="Java">
+        <h3>Java Programming</h3>
+        <p>Membangun aplikasi desktop & enterprise dengan Java.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      <!-- Card 15 -->
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="programming" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/000000/c-plus-plus-logo.png" alt="C++">
+        <h3>C++ Programming</h3>
+        <p>Bahasa dasar untuk game development & sistem operasi.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      <!-- Card 16 -->
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="programming" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/000000/php.png" alt="PHP">
+        <h3>PHP & MySQL</h3>
+        <p>Membangun website dinamis dengan PHP & MySQL.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      <!-- Card 17 -->
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="web" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/000000/wordpress.png" alt="WordPress">
+        <h3>WordPress Development</h3>
+        <p>Membangun website cepat dengan WordPress & plugin.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      <!-- Card 18 -->
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="web" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/000000/api.png" alt="API">
+        <h3>API & REST</h3>
+        <p>Integrasi sistem dengan REST API & GraphQL.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      <!-- Card 19 -->
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="data" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/000000/data-configuration.png" alt="Big Data">
+        <h3>Big Data</h3>
+        <p>Pengolahan data besar dengan Hadoop & Spark.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+      <!-- Card 20 -->
+      <div class="card bg-blue backdrop-blur-md rounded-xl p-6 shadow-md hover:scale-105 transition transform duration-300" data-category="network" data-aos="fade-up">
+        <img src="https://img.icons8.com/color/96/000000/iot.png" alt="IoT">
+        <h3>Internet of Things</h3>
+        <p>Integrasi perangkat pintar melalui jaringan internet.</p>
+        <button id="readMoreBtn" class="readMoreBtn mt-4 bg-blue-500 hover:bg-blue-600 text-white px-5 py-2 rounded-lg transition">
+      Read More
+    </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const collectionSection = document.getElementById("collection");
+  const alertBox = document.getElementById("customAlert");
+
+  function showAlert(message) {
+    alertBox.textContent = message;
+    alertBox.classList.add("show");
+    setTimeout(() => {
+      alertBox.classList.remove("show");
+    }, 2000); // hilang otomatis setelah 2 detik
+  }
+
+  document.querySelectorAll(".readMoreBtn").forEach(button => {
+    button.addEventListener("click", () => {
+      const card = button.closest(".card");
+
+      // cek apakah card sudah ditambahkan
+      if (card.dataset.added === "true") {
+        showAlert("Card ini sudah ada di Collection!");
+        return;
+      }
+
+      // clone card
+      const clonedCard = card.cloneNode(true);
+
+      // hapus button "Read More"
+      const readMoreBtn = clonedCard.querySelector(".readMoreBtn");
+      if (readMoreBtn) readMoreBtn.remove();
+
+      // tambahkan tombol delete
+      const deleteBtn = document.createElement("button");
+      deleteBtn.textContent = "Remove";
+      deleteBtn.className =
+        "mt-4 bg-red-500 hover:bg-red-600 text-white px-5 py-2 rounded-lg transition";
+      clonedCard.appendChild(deleteBtn);
+
+      // event untuk hapus card
+      deleteBtn.addEventListener("click", () => {
+        clonedCard.remove();
+        card.dataset.added = "false"; // reset supaya bisa ditambahkan lagi
+      });
+
+      // masukkan ke section collection
+      collectionSection.appendChild(clonedCard);
+
+      // tandai card sudah ditambahkan
+      card.dataset.added = "true";
+    });
+  });
+});
+</script>
+
+<style>
+  /* Alert custom */
+  .custom-alert {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: #f87171; /* merah lembut */
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.4s ease;
+    z-index: 9999;
+  }
+
+  .custom-alert.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+
+  #collection {
+    
+    color: black ;
+
+    min-height: 200px;
+
+  }
+</style>
+
+<div id="customAlert" class="custom-alert">Card ini sudah ada di Collection!</div>
+
+
+
+
+
+<style>
+.learning-section {
+  padding: 60px 20px;
+  color: #333;
+}
+.learning-section .section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: white;
+}
+.learning-section .section-subtitle {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  color: #f8f8f8;
+}
+.filter-search {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+.filter-search select, 
+.filter-search input {
+  padding: 10px 14px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.learning-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  transition: 0.3s;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+.card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+  margin: 0 auto 15px; /* auto kiri kanan = tengah */
+  display: block;      /* biar auto bekerja */
+}
+
+@media (max-width: 1024px) {
+  .learning-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .learning-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+</style>
+<script>
+const searchInput = document.getElementById('searchInput');
+const filterSelect = document.getElementById('filterSelect');
+const cards = document.querySelectorAll('.learning-grid .card');
+
+function filterLearning() {
+  const searchValue = searchInput.value.toLowerCase();
+  const filterValue = filterSelect.value;
+
+  cards.forEach(card => {
+    const text = card.innerText.toLowerCase();
+    const category = card.getAttribute('data-category');
+
+    if ((filterValue === 'all' || filterValue === category) &&
+        text.includes(searchValue)) {
+      card.style.display = 'block';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+
+searchInput.addEventListener('input', filterLearning);
+filterSelect.addEventListener('change', filterLearning);
+</script>
+
+<!--
+    <section id="search" class="section min-h-screen grid place-items-center bg-white">
+      <h2 class="text-4xl font-bold text-sky-700">Search</h2>
+    </section> -->
+
+    <!-- Section Collection -->
+<section id="collection" class="grid grid-cols-4 md:grid-cols-5 gap-6 p-8 bg-gradient-to-r from-sky-400 via-sky-500 to-indigo-500">
+  <h2 
+  class="col-span-full text-3xl font-extrabold text-center mb-6 bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent relative 
+         after:content-[''] after:block after:w-20 after:h-1 after:mx-auto after:mt-2 after:rounded-full after:bg-gradient-to-r after:from-blue-500 after:to-purple-600">
+  My Collection
+</h2>
+
+</section>
+
+  </main>
+
+  <!-- JS -->
+  <script src="js/script.js"></script>
+  <script>
+  AOS.init();
+</script>
+
+</body>
+</html>

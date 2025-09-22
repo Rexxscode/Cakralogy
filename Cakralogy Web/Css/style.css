@@ -1,0 +1,103 @@
+/* Smooth scrolling untuk anchor */
+html { scroll-behavior: smooth; }
+
+/* Section demo styling (boleh hapus nanti) */
+.section { padding: 2rem; }
+
+/* ---------- Nav Link underline animation (desktop) ---------- */
+.nav-link {
+  position: relative;
+  font-weight: 500;
+  transition: color .2s ease;
+}
+
+.nav-link:hover { color: #fef08a; } /* yellow-200 */
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0; bottom: -4px;
+  width: 0; height: 2px;
+  background: #fef08a; /* underline kuning */
+  transition: width .25s ease;
+}
+
+.nav-link:hover::after,
+.nav-link.is-active::after { width: 100%; }
+
+.nav-link.is-active { color: #fef08a; }
+
+/* ---------- Mobile dropdown animation ---------- */
+.mobile-menu {
+  /* animasi halus: tinggi, opasitas, dan geser */
+  transition:
+    max-height .35s ease-in-out,
+    opacity .3s ease-in-out,
+    transform .3s ease-in-out;
+  transform: translateY(-6px);
+}
+
+.mobile-menu.open {
+  max-height: 320px;    /* cukup menampung semua link */
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+/* Link di menu mobile */
+.mobile-link {
+  color: #ffffff;
+  padding: .75rem 0;
+  font-weight: 500;
+  border-bottom: 1px solid rgb(255 255 255 / 0.2);
+  transition: background-color .2s ease, color .2s ease;
+}
+
+.mobile-link:last-child { border-bottom: 0; }
+.mobile-link:hover { color: #fef08a; }
+
+/* ---------- Sticky shadow saat scroll ---------- */
+#topnav.is-sticky {
+  box-shadow: 0 8px 24px rgba(2, 6, 23, 0.15); /* sky shadow */
+}
+
+/* Home Section */
+#home h1 {
+  animation: fadeInDown 1s ease-in-out;
+}
+#home p {
+  animation: fadeInUp 1.2s ease-in-out;
+}
+#home a {
+  animation: fadeInUp 1.4s ease-in-out;
+}
+#home img {
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Setiap section offset biar gak ketutup navbar */
+section { scroll-margin-top: 5rem; }
+
+/* Home Section animations */
+#home h1 { animation: fadeInDown 1s ease-in-out; }
+#home p { animation: fadeInUp 1.2s ease-in-out; }
+#home a { animation: fadeInUp 1.4s ease-in-out; }
+#home img { animation: float 3s ease-in-out infinite; }
+#home { margin-top: 65px;}
+
+/* Animasi teks */
+@keyframes fadeInDown {
+  from {opacity: 0; transform: translateY(-30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+@keyframes fadeInUp {
+  from {opacity: 0; transform: translateY(30px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+/* Robot melayang */
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0px); }
+}
